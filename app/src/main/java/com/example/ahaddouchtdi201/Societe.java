@@ -6,14 +6,16 @@ public class Societe  implements Serializable {
     int id;
     String nom;
     String Secteur;
+    int nbEmploiye;
 
     public Societe() {
     }
 
-    public Societe(int id, String nom, String secteur) {
+    public Societe(int id, String nom, String secteur,int nbEmploiye) {
         this.id = id;
         this.nom = nom;
         Secteur = secteur;
+        this.nbEmploiye=nbEmploiye;
     }
 
     public int getId() {
@@ -38,5 +40,13 @@ public class Societe  implements Serializable {
 
     public void setSecteur(String secteur) {
         Secteur = secteur;
+    }
+
+    public int getNbEmploiye() {
+        return nbEmploiye;
+    }
+
+    public void setNbEmploiye(int nbEmploiye) {
+        this.nbEmploiye = nbEmploiye;
     }
 }
