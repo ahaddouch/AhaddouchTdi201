@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".editeSoc">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        style="@style/text"
+        android:hint="tapes le nom de la sociter"
+        android:id="@+id/txtnom"
+        />
+    <EditText
+        android:layout_below="@+id/txtnom"
+        style="@style/text"
+        android:hint="taper le secteure  d'activites"
+        android:id="@+id/tadresse"/>
+    <EditText
+        android:layout_below="@+id/tadresse"
+        style="@style/text"
+        android:hint="taper le nomber de emploiyer"
+        android:id="@+id/tnb"/>
+    <Button
+        style="@style/btn2"
+        android:layout_below="@+id/tnb"
+        android:text="@string/bajout"
+        android:id="@+id/enregistrer"
+        />
+    <Button
+        android:id="@+id/annuler"
+        style="@style/btn2"
+        android:layout_below="@+id/tnb"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_toRightOf="@+id/enregistrer"
+        android:text="@string/bcancel" />
+
+</RelativeLayout>

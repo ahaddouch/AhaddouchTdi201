@@ -3,4 +3,7 @@
     <string name="btnajouter">Ajouter une societe</string>
     <string name="btnedit">Edit une societe</string>
     <string name="btnlist">liste de tous les societes</string>
+    <string name="bajout">Enregestrer</string>
+    <string name="bcancel">Annuler</string>
+
 </resources>
