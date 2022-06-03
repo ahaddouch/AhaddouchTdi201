@@ -6,6 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".editeSoc">
 
+    <Spinner
+        android:id="@+id/spp"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp" />
 
+    <EditText
+        style="@style/text"
+        android:hint="tapes le nom de la sociter"
+        android:id="@+id/ttnom"
+        android:layout_below="@+id/spp"
+        />
+    <EditText
+        android:layout_below="@+id/ttnom"
+        style="@style/text"
+        android:hint="taper le secteure  d'activites"
+        android:id="@+id/ttsecteur"/>
+    <EditText
+        android:layout_below="@+id/ttsecteur"
+        style="@style/text"
+        android:hint="taper le nomber de emploiyer"
+        android:id="@+id/ttnb"/>
+    <Button
+        style="@style/btn2"
+        android:layout_below="@+id/ttnb"
+        android:text="@string/bmod"
+        android:id="@+id/btnmod"
+        android:onClick="modifier"
+        />
+    <Button
+        android:id="@+id/btnsup"
+        style="@style/btn2"
+        android:layout_below="@+id/ttnb"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_toRightOf="@+id/btnmod"
+        android:text="@string/bsup"
+        android:onClick="supprimer"/>
 
 </RelativeLayout>

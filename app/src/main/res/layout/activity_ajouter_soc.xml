@@ -25,7 +25,8 @@
         android:layout_below="@+id/txtnb"
         android:text="@string/bajout"
         android:id="@+id/btnenr"
-        />
+        android:onClick="Enregistrer"
+         />
     <Button
         android:id="@+id/btnanul"
         style="@style/btn2"
@@ -33,7 +34,7 @@
         android:layout_alignParentEnd="true"
 
 
-        android:layout_toRightOf="@+id/enregistrer"
+        android:layout_toRightOf="@+id/btnenr"
         android:text="@string/bcancel" />
 
 </RelativeLayout>

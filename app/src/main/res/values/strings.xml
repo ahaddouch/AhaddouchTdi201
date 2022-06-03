@@ -5,5 +5,7 @@
     <string name="btnlist">liste de tous les societes</string>
     <string name="bajout">Enregestrer</string>
     <string name="bcancel">Annuler</string>
+    <string name="bmod">Enregestrer</string>
+    <string name="bsup">Annuler</string>
 
 </resources>
