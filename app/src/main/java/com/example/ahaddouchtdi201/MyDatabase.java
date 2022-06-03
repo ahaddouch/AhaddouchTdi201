@@ -8,6 +8,14 @@ import androidx.annotation.Nullable;
 
 public class MyDatabase extends SQLiteOpenHelper {
     static public String dbName="societes.db";
+    static public String tableName="Societe";
+    static public String col1="ID";
+    static public String col2="Raison_Sociale";
+    static public String col3="Raison_Sociale";
+    static public String col4="nb_employe";
+
+
+
 
     public MyDatabase(Context context) {
         super(context, dbName, null, 1);
