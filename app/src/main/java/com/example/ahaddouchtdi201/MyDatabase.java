@@ -2,10 +2,13 @@ package com.example.ahaddouchtdi201;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import java.util.ArrayList;
 
 public class MyDatabase extends SQLiteOpenHelper {
     static public String dbName="societes.db";
@@ -52,7 +55,23 @@ public class MyDatabase extends SQLiteOpenHelper {
 
         return sqLiteDatabase.delete(tableName, col1 + "=" + number, null);
     }
+    public static ArrayList getAllSociete(SQLiteDatabase sqLiteDatabase) {
+        Cursor c = sqLiteDatabase.rawQuery("select * from " + tableName, null);
+        ArrayList<Societe> soc = new ArrayList<>();
+        while (c.moveToNext()) {
+            soc.add(new Societe(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3)));
 
+        }
+        return soc;
+    }
+
+    public static Societe getOneSociete(SQLiteDatabase sqLiteDatabase, String number) {
+        Societe soc = null;
+        Cursor c = sqLiteDatabase.rawQuery("select * from " + tableName + " where " + col1 + "=" + number, null);
+        if (c.moveToNext())
+            soc = new Societe(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3));
+        return soc;
+    }
 
 
 
