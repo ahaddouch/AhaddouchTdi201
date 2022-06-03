@@ -33,14 +33,23 @@ public class MyDatabase extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(sql);
         onCreate(sqLiteDatabase);
     }
-    public static long AddSociete(SQLiteDatabase sqLiteDatabase, Societe contact) {
+    public static long AddSociete(SQLiteDatabase sqLiteDatabase, Societe societe) {
         ContentValues cv = new ContentValues();
 
-        cv.put(col2, contact.getNom());
-        cv.put(col3, contact.getSecteur());
-        cv.put(col4, contact.getNbEmploiye());
+        cv.put(col2, societe.getNom());
+        cv.put(col3, societe.getSecteur());
+        cv.put(col4, societe.getNbEmploiye());
         return sqLiteDatabase.insert(tableName, null, cv);
     }
+    public static long UpdateSociete(SQLiteDatabase sqLiteDatabase, Societe societe) {
+        ContentValues cv = new ContentValues();
+        cv.put(col2, societe.getNom());
+        cv.put(col3, societe.getSecteur());
+        cv.put(col4, societe.getNbEmploiye());
+        return sqLiteDatabase.update(tableName, cv, col3 + "=" + societe.getId(), null);
+    }
+
+
 
 
 
