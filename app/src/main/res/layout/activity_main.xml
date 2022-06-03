@@ -8,17 +8,17 @@
     android:gravity="center"
     android:orientation="vertical">
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnajouter"/>
+
+        android:text="@string/btnajouter"
+        style="@style/btn"/>
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnedit"/>
+
+        android:text="@string/btnedit"
+        style="@style/btn"/>
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnlist"/>
+
+        android:text="@string/btnlist"
+        style="@style/btn"/>
 
 
 
