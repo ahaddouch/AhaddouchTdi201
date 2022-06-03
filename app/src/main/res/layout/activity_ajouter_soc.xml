@@ -6,22 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".ajouterSoc">
     <EditText
-       style="@style/text"
-        android:id="@+id/txt1"/>
-    <EditText
         style="@style/text"
-        android:id="@+id/txt2"/>
+        android:hint="tapes le nom de la sociter"
+        android:id="@+id/txtnom"
+        />
     <EditText
+        android:layout_below="@+id/txtnom"
         style="@style/text"
-        android:id="@+id/txt3"/>
+        android:hint="taper le secteure  d'activites"
+        android:id="@+id/txtsecteur"/>
+    <EditText
+        android:layout_below="@+id/txtsecteur"
+        style="@style/text"
+        android:hint="taper le nomber de emploiyer"
+        android:id="@+id/txtnb"/>
     <Button
         style="@style/btn2"
-        android:id="@+id/bajoute"
-        android:text="@string/bajout"/>
+        android:layout_below="@+id/txtnb"
+        android:text="@string/bajout"
+        android:id="@+id/btnenr"
+        />
     <Button
+        android:id="@+id/btnanul"
         style="@style/btn2"
-        android:id="@+id/bcancel"
-        android:text="@string/bcancel"/>
+        android:layout_below="@+id/txtnb"
+        android:layout_alignParentEnd="true"
 
+
+        android:layout_toRightOf="@+id/enregistrer"
+        android:text="@string/bcancel" />
 
 </RelativeLayout>
