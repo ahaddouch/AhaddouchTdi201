@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AhaddouchTdi201</string>
+    <string name="app_name">Menu general</string>
     <string name="btnajouter">Ajouter une societe</string>
     <string name="btnedit">Edit une societe</string>
     <string name="btnlist">liste de tous les societes</string>
