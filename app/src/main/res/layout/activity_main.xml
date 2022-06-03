@@ -10,15 +10,18 @@
     <Button
 
         android:text="@string/btnajouter"
-        style="@style/btn"/>
+        style="@style/btn"
+        android:id="@+id/btnadd"/>
     <Button
 
         android:text="@string/btnedit"
-        style="@style/btn"/>
+        style="@style/btn"
+        android:id="@+id/btnedit"/>
     <Button
 
         android:text="@string/btnlist"
-        style="@style/btn"/>
+        style="@style/btn"
+        android:id="@+id/btnlist"/>
 
 
 

@@ -14,6 +14,15 @@
         android:theme="@style/Theme.AhaddouchTdi201"
         tools:targetApi="31">
         <activity
+            android:name=".listSoc"
+            android:exported="false" />
+        <activity
+            android:name=".editeSoc"
+            android:exported="false" />
+        <activity
+            android:name=".ajouterSoc"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
